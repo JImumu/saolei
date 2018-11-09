@@ -83,7 +83,7 @@ class Game {
             } else {
                 str += ((e.islei ? '+' : (e.zhouwei ? e.zhouwei : '-') )+ ',')
             }
-            if ((i+1) % this.level == 0 && i != 1) {
+            if ((i+1) % this.size == 0 && i != 1) {
                 str += '\n'
             }
         })
@@ -93,7 +93,7 @@ class Game {
         let str = '\n'
         this.game.forEach((e,i) => {
             str += ((e.islei ? '+' : (e.zhouwei ? e.zhouwei : '-') )+ ',')
-            if ((i+1) % this.level == 0 && i != 1) {
+            if ((i+1) % this.size == 0 && i != 1) {
                 str += '\n'
             }
         })
